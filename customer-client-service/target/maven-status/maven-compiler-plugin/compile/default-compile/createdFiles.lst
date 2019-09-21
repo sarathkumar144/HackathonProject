@@ -1,7 +1,0 @@
-org/exampledriven/eureka/customer/shared/client/Application.class
-org/exampledriven/eureka/customer/shared/client/controller/MessageWrapper.class
-org/exampledriven/eureka/customer/shared/client/controller/CustomerFeignController.class
-org/exampledriven/eureka/customer/shared/client/Config.class
-org/exampledriven/eureka/customer/shared/client/controller/CustomerRestTemplateController.class
-org/exampledriven/eureka/customer/shared/client/client/CustomerServiceRestTemplateClient$1.class
-org/exampledriven/eureka/customer/shared/client/client/CustomerServiceRestTemplateClient.class
