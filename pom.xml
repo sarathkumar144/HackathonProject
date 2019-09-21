@@ -7,7 +7,15 @@
     <artifactId>spring-cloud-eureka-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <build>
+    
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.6.0.1398</version>
+    <packaging>jar</packaging>
+    <name>com.sonar.maven</name>
+    <url>http://maven.apache.org</url>
+    
     <name>Spring cloud eureka example parent</name>
 
     <modules>
