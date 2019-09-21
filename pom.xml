@@ -8,13 +8,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
      
-    <groupId>org.sonarsource.scanner.maven</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>2.9</version>
-    <packaging>jar</packaging>
-    <name>com.sonar.maven</name>
-    <url>https://maven.apache.org</org>
-
     <name>Spring cloud eureka example parent</name>
 
     <modules>
