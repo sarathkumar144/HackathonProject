@@ -1,0 +1,6 @@
+/root/Work/sample-eureka/customer-client-service/src/main/java/org/exampledriven/eureka/customer/shared/client/client/CustomerServiceRestTemplateClient.java
+/root/Work/sample-eureka/customer-client-service/src/main/java/org/exampledriven/eureka/customer/shared/client/Config.java
+/root/Work/sample-eureka/customer-client-service/src/main/java/org/exampledriven/eureka/customer/shared/client/controller/CustomerRestTemplateController.java
+/root/Work/sample-eureka/customer-client-service/src/main/java/org/exampledriven/eureka/customer/shared/client/Application.java
+/root/Work/sample-eureka/customer-client-service/src/main/java/org/exampledriven/eureka/customer/shared/client/controller/MessageWrapper.java
+/root/Work/sample-eureka/customer-client-service/src/main/java/org/exampledriven/eureka/customer/shared/client/controller/CustomerFeignController.java
