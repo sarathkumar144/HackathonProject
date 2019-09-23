@@ -27,7 +27,7 @@ node {
 
 
     stage('Push image') {
-        docker.withRegistry('http://34.69.248.141:8081/repository/dockergrouprepro', 'Nexus-Credentials') {
+        docker.withRegistry('http://34.69.248.141:8081/repository/dockerhostedrepo/', 'Nexus-Credentials') {
             dockerImage.push("${env.BUILD_NUMBER}")
         }
         echo "Trying to push docker image to nexus"
