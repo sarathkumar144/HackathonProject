@@ -20,7 +20,7 @@ node {
     }
     
     stage('SonarQube analysis') { 
-        withSonarQubeEnv('Sonar') { 
+        withSonarQubeEnv('localSonar') { 
           sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar '
         }
     }
