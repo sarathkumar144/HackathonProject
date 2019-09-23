@@ -32,6 +32,7 @@ node {
           '-Dsonar.test.inclusions=**/*Test*/** ' +
           '-Dsonar.exclusions=**/*Test*/**'
         }
+    }
 
 
     stage('Build image') {
