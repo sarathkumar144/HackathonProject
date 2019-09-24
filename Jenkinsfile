@@ -45,7 +45,7 @@ node {
     stage('Push Tags to Github'){
     withCredentials([usernamePassword(credentialsId: 'GitHubCredentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
    sh("git tag -a ${env.BUILD_NUMBER} -m 'Jenkins'")
-    sh('git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com:sarathkumar144/HackathonProject.git --tags')
+    sh('git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/sarathkumar144/HackathonProject.git --tags')
 }
     }
     
