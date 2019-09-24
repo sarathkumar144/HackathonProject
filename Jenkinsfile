@@ -38,10 +38,11 @@ node {
         }
         echo "Trying to push docker image to nexus"
     }
+   
 
     stage('Run Image'){
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-            dockerImage.run()
+        docker.withRegistry('http://34.69.248.141:8123/repository/HackathonDockerRepo/', 'nexus-credentials) {
+            dockerImage.withRun('-p 3306:3306')
         }
 
     }
