@@ -43,7 +43,7 @@ node {
     }
     
     stage('Push Tags to Github') {
-        withCredentials([usernamePassword(credentialsId: 'GitHubCredentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+        withCredentials([usernamePassword(credentialsId: 'GitHubCredentials', passwordVariable: 'Windows-123', usernameVariable: 'sarathkumar144')]) {
         sh "git tag Jenkins_build_${env.BUILD_NUMBER} ${env.GIT_COMMIT}"
         sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@https://github.com/sarathkumar144/HackathonProject.git --tags"
     }
