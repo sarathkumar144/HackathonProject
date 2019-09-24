@@ -41,7 +41,7 @@ node {
    
 
     stage('Run Image'){
-        docker.withRegistry('http://34.69.248.141:8123/repository/HackathonDockerRepo/', 'nexus-credentials) {
+        docker.withRegistry('http://34.69.248.141:8123/repository/HackathonDockerRepo/', 'nexus-credentials') {
             dockerImage.withRun('-p 3306:3306')
         }
 
