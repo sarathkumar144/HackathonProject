@@ -13,10 +13,14 @@ node {
 
         mvnHome = tool 'localMaven'
     }
+    stage('Execute Unit Tests') {
+        // build project via maven
+        sh "'${mvnHome}/bin/mvn' clean test"
+    }
 
     stage('Build Project') {
         // build project via maven
-        sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+        sh "'${mvnHome}/bin/mvn' clean package"
     }
     
     stage('SonarQube analysis') { 
@@ -27,8 +31,7 @@ node {
 
 
     stage('Build image') {
-
-        dockerImage = docker.build("sarathkumar14/eureka-server:${env.BUILD_ID}")
+         dockerImage = docker.build("sarathkumar14/eureka-server:${env.BUILD_ID}")
     }
 
 
@@ -37,14 +40,6 @@ node {
             dockerImage.push("${env.BUILD_NUMBER}")
         }
         echo "Trying to push docker image to nexus"
-    }
-   
-
-    stage('Run Image'){
-        docker.withRegistry('http://34.69.248.141:8123/repository/HackathonDockerRepo/', 'nexus-credentials') {
-            dockerImage.withRun('-p 3306:3306')
-        }
-
     }
 
 }
