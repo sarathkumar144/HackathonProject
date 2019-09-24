@@ -45,7 +45,7 @@ node {
     stage('Push Tags to Github'){
     sshagent(['GitHubCredentials']) {
          sh("git tag -a ${env.BUILD_NUMBER} -m 'Jenkins'")
-         sh("git push  'https://github.com/sarathkumar144/HackathonProject.git' --tags")
+         sh("git push --tags")
    
     }
     }
